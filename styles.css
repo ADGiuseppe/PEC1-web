@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5a8bf4; /* Red color */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #5a8bf4;
+}
+
+main {
+    padding: 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.related-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.related-links a {
+    color: #5a8bf4;
+    text-decoration: none;
+}
