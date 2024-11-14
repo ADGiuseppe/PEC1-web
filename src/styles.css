@@ -163,13 +163,9 @@ canvas {
   justify-content: center;
   gap: 0.5rem;
   margin-top: 0;
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-.continue-exploring:hover .explore-links {
-  opacity: 1;
-  visibility: visible;
 }
 
 .explore-link-beach {
@@ -339,43 +335,5 @@ canvas {
   .index_nav a:hover {
     text-decoration: underline;
     color: #4FB3F5;
-  }
-}
-.explore-link-beach,
-.explore-link-duomo,
-.explore-link-belvedere,
-.explore-link-beach-cat,
-.explore-link-duomo-cat,
-.explore-link-belvedere-cat {
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 3%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-weight: bold;
-  color: #fff;
-  border-radius: 1rem;
-}
-.explore-link-beach:hover,
-.explore-link-duomo:hover,
-.explore-link-belvedere:hover,
-.explore-link-beach-cat:hover,
-.explore-link-duomo-cat:hover,
-.explore-link-belvedere-cat:hover {
-  font-weight: bold;
-  color: white;
-}
-
-@media (hover: none) and (pointer: coarse) {
-  .explore-link-beach:hover,
-.explore-link-duomo:hover,
-.explore-link-belvedere:hover,
-.explore-link-beach-cat:hover,
-.explore-link-duomo-cat:hover,
-.explore-link-belvedere-cat:hover {
-    background-image: none;
-    font-weight: normal;
-    color: #fff;
   }
 }/*# sourceMappingURL=styles.css.map */
