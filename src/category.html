@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giulianova: Points of Interest</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Explore Giulianova</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="category.html">Points of Interest</a>
+            <a href="category.html" class="selected">Points of Interest</a>
             <a href="presentation.html">About Giulianova</a>
             <a href="sources.html">Sources</a>
         </nav>
     </header>
+    <div class="canvas-wrap">
+        <canvas id="canvas"></canvas>
+    </div>
     <main>
-        <section>
-            <h2>What not to miss!</h2>
-            <p>Giulianova is well reknown for its hystoric landmarks.
-            Here are some you must visit during your stay!
+        <section class="content">
+            <h3>What not to miss!</h3>
+            <p>Giulianova is well reknown for its hystoric landmarks and beautiful locations.
+                Here are some you must visit during your stay!
             </p>
             <ul>
-                <li><a href="detail1.html">San Flaviano Cathedral</a></li>
-                <li><a href="detail2.html">Giulianova Lido Beach</a></li>
-                <li><a href="detail3.html">Belvedere of Giulianova</a></li>
+              <li class="cont_li"><a href="detail3.html" class="explore-link-beach-cat">Giulianova Lido Beach</a></li>
+              <li class="cont_li"><a href="detail1.html" class="explore-link-duomo-cat">San Flaviano Cathedral</a></li>
+              <li class="cont_li"><a href="detail2.html" class="explore-link-belvedere-cat">Giulianova Belvedere</a></li>
             </ul>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11571.622518356264!2d13.9383942!3d42.7129822!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133157d5d278dbf1%3A0xe7b07f1217f9955d!2sGiulianova%2C%20Italy!5e0!3m2!1sen!2sus!4v1637014878231!5m2!1sen!2sus" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
     </main>
+<footer>
+    <div class="footer-left">
+        <p class="footer">&copy; 2024 Your Company. All Rights Reserved.</p>
+    </div>
+
+    <div class="useful_links">
+        <p class="footer"><a href="contacts.html">About this website</a></p>
+    </div>
+</footer>
 </body>
 </html>
