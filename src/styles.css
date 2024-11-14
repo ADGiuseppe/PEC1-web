@@ -11,8 +11,8 @@ main {
   margin-right: 20%;
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 2em;
 }
-
 main.index {
   background-image: url(../images/wave.svg);
   background-size: cover;
@@ -27,9 +27,9 @@ header {
   text-align: center;
   background-color: #0099FF;
   min-height: 15vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 header nav a {
   color: #fff;
@@ -44,6 +44,7 @@ footer {
   background-color: #0099FF;
   color: #fff;
   padding: 0.3rem;
+  text-align: center;
 }
 footer a {
   color: #fff;
@@ -53,28 +54,16 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.footer_left {
-  align-self: left;
-  text-align: left;
-}
-
-.footer {
-  margin-bottom: 0;
-}
-
-.useful_links {
-  align-content: right;
-  align-self: right;
-  text-align: right;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+.footer_left, .useful_links {
+  text-align: center;
+  margin: 1rem;
 }
 
 p {
   margin-bottom: 4%;
 }
 
-h1 h2 {
+h1, h2 {
   padding: 0;
 }
 
@@ -93,10 +82,6 @@ h5 {
   margin-top: 1%;
   margin-bottom: 2%;
   font-size: 2rem;
-}
-
-main {
-  padding: 2em;
 }
 
 img {
@@ -126,28 +111,22 @@ canvas {
   list-style-type: none;
   padding: 0;
 }
-.related-links a {
-  color: #0099FF;
-  text-decoration: none;
-}
 
 .index_head {
-  font-weight: 1000;
+  font-weight: bold;
   font-size: 3rem;
 }
 
-.contact_text {
-  margin-left: 20%;
-  margin-right: 20%;
+.contact_text, .map-container {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .index_nav {
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: #fff;
   color: #0099FF;
-  font-weight: 400;
-  text-decoration: none;
   padding: 1rem;
   font-style: italic;
 }
@@ -155,7 +134,6 @@ canvas {
   list-style-type: none;
   padding: 0;
   font-weight: 800;
-  font-style: normal;
 }
 .index_nav a {
   color: #0099FF;
@@ -166,49 +144,12 @@ canvas {
   color: #4FB3F5;
 }
 
-.content ul {
-  list-style-type: none;
-  padding: 0;
-  font-style: normal;
+.sources, .content {
   text-align: center;
 }
-.content li {
-  line-height: 1.5;
-}
-.content a {
-  text-decoration: none;
-  color: #fff;
-}
-.content a:hover {
-  text-decoration: underline;
-  color: #fff;
-}
-
-.sources ul {
+.sources ul, .content ul {
   list-style-type: none;
   padding: 0;
-  font-style: normal;
-  text-align: center;
-}
-.sources li {
-  line-height: 1.5;
-}
-.sources a {
-  text-decoration: none;
-  color: #212121;
-}
-.sources a:hover {
-  text-decoration: underline;
-  color: #4FB3F5;
-}
-
-.map-container {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.selected {
-  text-decoration: underline;
 }
 
 .continue-exploring {
@@ -226,94 +167,25 @@ canvas {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-.continue-exploring .explore-links .explore-link-beach {
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
-  padding: 3%;
-  border-radius: 1%;
-}
-.continue-exploring .explore-links .explore-link-beach:hover {
-  background-image: url(../images/Beach.jpg);
-  border-radius: 1rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-weight: bold;
-  color: white;
-}
-.continue-exploring .explore-links .explore-link-duomo {
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
-  padding: 3%;
-  border-radius: 1%;
-}
-.continue-exploring .explore-links .explore-link-duomo:hover {
-  background-image: url(../images/Duomo_Giulianova.jpg);
-  border-radius: 1rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-weight: bold;
-  color: white;
-}
-.continue-exploring .explore-links .explore-link-belvedere {
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
-  padding: 3%;
-  border-radius: 1%;
-}
-.continue-exploring .explore-links .explore-link-belvedere:hover {
-  background-image: url(../images/Belvedere.webp);
-  border-radius: 1rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-weight: bold;
-  color: white;
-}
 .continue-exploring:hover .explore-links {
   opacity: 1;
   visibility: visible;
 }
 
-.explore-link-beach-cat {
+.explore-link-beach, .explore-link-duomo, .explore-link-belvedere, .explore-link-beach-cat, .explore-link-duomo-cat, .explore-link-belvedere-cat {
   font-size: 1.2rem;
   text-decoration: none;
   padding: 3%;
-  background-image: url(../images/Beach.jpg);
-  border-radius: 1rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-weight: bold;
-}
-
-.explore-link-duomo-cat {
-  font-size: 1.2rem;
   color: #fff;
-  text-decoration: none;
-  padding: 3%;
-  background-image: url(../images/Duomo_Giulianova.jpg);
   border-radius: 1rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-weight: bold;
 }
-
-.explore-link-belvedere-cat {
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 3%;
-  background-image: url(../images/Belvedere.webp);
-  border-radius: 1rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.explore-link-beach:hover, .explore-link-duomo:hover, .explore-link-belvedere:hover, .explore-link-beach-cat:hover, .explore-link-duomo-cat:hover, .explore-link-belvedere-cat:hover {
   font-weight: bold;
+  color: white;
 }
 
 .cont_li {
@@ -325,4 +197,40 @@ canvas {
   font-weight: 400;
   text-decoration: none;
   font-style: italic;
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+  main, .contact_text, .map-container, .index_nav {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .index_head {
+    font-size: 2rem;
+  }
+  header {
+    min-height: 10vh;
+    padding: 1rem;
+  }
+  nav a {
+    margin: 0 0.5rem;
+  }
+  .footer_left, .useful_links {
+    margin-right: 1rem;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+  }
+  .canvas-wrap {
+    position: relative;
+    max-width: 100%;
+  }
+  .explore-link-beach, .explore-link-duomo, .explore-link-belvedere, .explore-link-beach-cat, .explore-link-duomo-cat, .explore-link-belvedere-cat {
+    font-size: 1rem;
+    padding: 2%;
+  }
+  footer {
+    padding: 0.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
