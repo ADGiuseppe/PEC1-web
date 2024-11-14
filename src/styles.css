@@ -79,7 +79,7 @@ footer a:hover {
 }
 
 p {
-  margin-bottom: 4%;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -100,6 +100,7 @@ h3 {
 h4 {
   color: #0099FF;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 h5 {
@@ -112,6 +113,7 @@ h5 {
 img {
   max-width: 60%;
   height: auto;
+  margin-bottom: 1rem;
 }
 
 ul {
@@ -160,10 +162,14 @@ canvas {
   padding: 1rem;
   font-style: italic;
 }
+.index_nav p {
+  margin-top: 1rem;
+}
 .index_nav ul {
   list-style-type: none;
   padding: 0;
   font-weight: 800;
+  margin-top: 1rem;
 }
 .index_nav a {
   color: #0099FF;
