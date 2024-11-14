@@ -123,8 +123,8 @@ canvas {
 }
 
 .index_nav {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
   background-color: #fff;
   color: #0099FF;
   padding: 1rem;
@@ -172,10 +172,11 @@ canvas {
   visibility: visible;
 }
 
-.explore-link-beach, .explore-link-duomo, .explore-link-belvedere, .explore-link-beach-cat, .explore-link-duomo-cat, .explore-link-belvedere-cat {
+.explore-link-beach {
   font-size: 1.2rem;
   text-decoration: none;
   padding: 3%;
+  background-image: url(../images/Beach.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,7 +184,92 @@ canvas {
   color: #fff;
   border-radius: 1rem;
 }
-.explore-link-beach:hover, .explore-link-duomo:hover, .explore-link-belvedere:hover, .explore-link-beach-cat:hover, .explore-link-duomo-cat:hover, .explore-link-belvedere-cat:hover {
+.explore-link-beach:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.explore-link-duomo {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 3%;
+  background-image: url(../images/Duomo_Giulianova.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 1rem;
+}
+.explore-link-duomo:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.explore-link-belvedere {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 3%;
+  background-image: url(../images/Belvedere.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 1rem;
+}
+.explore-link-belvedere:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.explore-link-beach-cat {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 3%;
+  background-image: url(../images/Beach.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 1rem;
+}
+.explore-link-beach-cat:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.explore-link-duomo-cat {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 3%;
+  background-image: url(../images/Duomo_Giulianova.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 1rem;
+}
+.explore-link-duomo-cat:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.explore-link-belvedere-cat {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 3%;
+  background-image: url(../images/Belvedere.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 1rem;
+}
+.explore-link-belvedere-cat:hover {
   font-weight: bold;
   color: white;
 }
@@ -199,7 +285,7 @@ canvas {
   font-style: italic;
 }
 
-/* Mobile responsiveness adjustments */
+/* for Mobile */
 @media (max-width: 768px) {
   main, .contact_text, .map-container, .index_nav {
     margin-left: 5%;
@@ -232,5 +318,64 @@ canvas {
   }
   footer {
     padding: 0.5rem;
+  }
+  .index_nav {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fff;
+    color: #0099FF;
+    padding: 1rem;
+    font-style: italic;
+  }
+  .index_nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: 800;
+  }
+  .index_nav a {
+    color: #0099FF;
+    text-decoration: none;
+  }
+  .index_nav a:hover {
+    text-decoration: underline;
+    color: #4FB3F5;
+  }
+}
+.explore-link-beach,
+.explore-link-duomo,
+.explore-link-belvedere,
+.explore-link-beach-cat,
+.explore-link-duomo-cat,
+.explore-link-belvedere-cat {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 3%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 1rem;
+}
+.explore-link-beach:hover,
+.explore-link-duomo:hover,
+.explore-link-belvedere:hover,
+.explore-link-beach-cat:hover,
+.explore-link-duomo-cat:hover,
+.explore-link-belvedere-cat:hover {
+  font-weight: bold;
+  color: white;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .explore-link-beach:hover,
+.explore-link-duomo:hover,
+.explore-link-belvedere:hover,
+.explore-link-beach-cat:hover,
+.explore-link-duomo-cat:hover,
+.explore-link-belvedere-cat:hover {
+    background-image: none;
+    font-weight: normal;
+    color: #fff;
   }
 }/*# sourceMappingURL=styles.css.map */
