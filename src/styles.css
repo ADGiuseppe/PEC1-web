@@ -22,6 +22,10 @@ main.index {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   color: #fff;
   text-align: center;
@@ -70,6 +74,7 @@ h1, h2 {
 h3 {
   color: #0099FF;
   font-size: 2rem;
+  text-align: center;
 }
 
 h4 {
@@ -144,10 +149,21 @@ canvas {
   color: #4FB3F5;
 }
 
-.sources, .content {
+.sources {
+  text-align: center;
+  text-decoration: none;
+}
+.sources a {
+  color: #0099FF;
+}
+.sources a:hover {
+  text-decoration: underline;
+}
+
+.content {
   text-align: center;
 }
-.sources ul, .content ul {
+.content ul {
   list-style-type: none;
   padding: 0;
 }
@@ -164,7 +180,6 @@ canvas {
   gap: 0.5rem;
   margin-top: 0;
   opacity: 1;
-  visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -176,7 +191,6 @@ canvas {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-weight: bold;
   color: #fff;
   border-radius: 1rem;
 }
@@ -193,7 +207,6 @@ canvas {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-weight: bold;
   color: #fff;
   border-radius: 1rem;
 }
@@ -210,7 +223,6 @@ canvas {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-weight: bold;
   color: #fff;
   border-radius: 1rem;
 }
@@ -227,7 +239,6 @@ canvas {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-weight: bold;
   color: #fff;
   border-radius: 1rem;
 }
@@ -244,7 +255,6 @@ canvas {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-weight: bold;
   color: #fff;
   border-radius: 1rem;
 }
@@ -261,7 +271,6 @@ canvas {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-weight: bold;
   color: #fff;
   border-radius: 1rem;
 }

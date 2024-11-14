@@ -27,6 +27,9 @@ main
     margin: 0
     height: 100vh
 
+a
+  text-decoration: none
+
 header
   color: #fff
   text-align: center
@@ -70,6 +73,7 @@ h1, h2
 h3
   color: $secondary-color
   font-size: 2rem
+  text-align: center
 
 h4
   color: $secondary-color
@@ -133,7 +137,16 @@ canvas
       text-decoration: underline
       color: #4FB3F5
 
-.sources, .content
+.sources
+  text-align: center
+  text-decoration: none
+  a
+    color: $secondary-color
+
+    &:hover
+      text-decoration: underline
+  
+.content
   text-align: center
   ul
     list-style-type: none
@@ -151,7 +164,6 @@ canvas
     gap: 0.5rem
     margin-top: 0
     opacity: 1
-    visibility: hidden
     transition: opacity 0.3s ease, visibility 0.3s ease
 
 
@@ -163,7 +175,6 @@ canvas
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  font-weight: bold
   color: $white-color
   border-radius: 1rem
 
@@ -179,7 +190,6 @@ canvas
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  font-weight: bold
   color: $white-color
   border-radius: 1rem
 
@@ -195,7 +205,6 @@ canvas
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  font-weight: bold
   color: $white-color
   border-radius: 1rem
 
@@ -211,7 +220,6 @@ canvas
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  font-weight: bold
   color: $white-color
   border-radius: 1rem
 
@@ -227,7 +235,6 @@ canvas
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  font-weight: bold
   color: $white-color
   border-radius: 1rem
 
@@ -243,7 +250,6 @@ canvas
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  font-weight: bold
   color: $white-color
   border-radius: 1rem
 
