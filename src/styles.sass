@@ -45,7 +45,7 @@ header
   color: #fff
   text-align: center
   background-color: $secondary-color
-  min-height: 15vh
+  min-height: 17vh
   display: block
   align-items: center
   justify-content: center
@@ -90,6 +90,7 @@ h2
 h3
   color: $secondary-color
   font-size: 2rem
+  margin-bottom: 1rem
   text-align: center
 
 h4
@@ -115,6 +116,10 @@ ul
   position: absolute
   background-color: $white-color
   transform: translateY(-50%)
+
+.selected
+  font-weight: bold
+  text-decoration: underline
 
 canvas
   display: block
@@ -183,6 +188,9 @@ canvas
 
     &:hover
       text-decoration: underline
+
+  ul
+    margin-bottom: 1rem
   
 .content
   text-align: center
@@ -299,7 +307,7 @@ canvas
   margin-bottom: 6%
 
 .disclaimer
-  color: $secondary-color
+  color: $primary-color
   font-weight: 400
   text-decoration: none
   font-style: italic

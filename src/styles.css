@@ -42,7 +42,7 @@ header {
   color: #fff;
   text-align: center;
   background-color: #0099FF;
-  min-height: 15vh;
+  min-height: 17vh;
   display: block;
   align-items: center;
   justify-content: center;
@@ -93,6 +93,7 @@ h2 {
 h3 {
   color: #0099FF;
   font-size: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -123,6 +124,11 @@ ul {
   position: absolute;
   background-color: #fff;
   transform: translateY(-50%);
+}
+
+.selected {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 canvas {
@@ -199,6 +205,9 @@ canvas {
 }
 .sources a:hover {
   text-decoration: underline;
+}
+.sources ul {
+  margin-bottom: 1rem;
 }
 
 .content {
@@ -325,7 +334,7 @@ canvas {
 }
 
 .disclaimer {
-  color: #0099FF;
+  color: #212121;
   font-weight: 400;
   text-decoration: none;
   font-style: italic;
