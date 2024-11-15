@@ -86,24 +86,24 @@ h1 {
   padding-top: 1rem;
 }
 
-h2 {
+.h2 {
   padding: 0;
 }
 
-h3 {
+.h3 {
   color: #0099FF;
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-h4 {
+.h4 {
   color: #0099FF;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-h5 {
+.h5 {
   color: #fff;
   margin-top: 1%;
   margin-bottom: 2%;
@@ -118,6 +118,11 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+iframe {
+  width: 100%;
+  align-content: center;
 }
 
 .canvas-wrap {
@@ -149,9 +154,20 @@ canvas {
   font-size: 3rem;
 }
 
-.contact_text, .map-container {
+.contact_text {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.map-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  align-content: center;
+}
+
+.video {
+  width: 80%;
+  height: 40vh;
 }
 
 .index_nav {
@@ -351,9 +367,14 @@ canvas {
 
 /* for Mobile */
 @media (max-width: 768px) {
-  main, .contact_text, .map-container, .index_nav {
+  main, .contact_text, .index_nav {
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .map_container {
+    margin-left: 5%;
+    margin-right: 5%;
+    align-content: center;
   }
   .index_head {
     font-size: 2rem;
