@@ -9,7 +9,6 @@ $white-color: #fff
   margin: 0
   padding: 0
 
-
 html
   margin: 0
   padding: 0
@@ -61,6 +60,13 @@ header
     &:hover
       text-decoration: underline
 
+.logo-container 
+    flex-shrink: 0
+
+.logo 
+    height: 50px
+    width: auto
+
 footer
   background-color: $secondary-color
   color: $white-color
@@ -83,7 +89,19 @@ p
 
 h1
   padding-top: 1rem
-  
+  font-size: 3rem   
+  opacity: 0        
+  transform: scale(0.5)  
+  animation: grow 1s ease-out forwards 
+
+@keyframes grow
+  0%
+    opacity: 0
+    transform: scale(0.5)
+  100%
+    opacity: 1
+    transform: scale(1) 
+
 .h2
   padding: 0
 
@@ -394,4 +412,7 @@ canvas
       &:hover
         text-decoration: underline
         color: #4FB3F5
+
+.clipped 
+  clip-path: circle(100px at center)
 

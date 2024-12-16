@@ -59,6 +59,15 @@ header nav a:hover {
   text-decoration: underline;
 }
 
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
 footer {
   background-color: #0099FF;
   color: #fff;
@@ -84,8 +93,34 @@ p {
 
 h1 {
   padding-top: 1rem;
+  font-size: 3rem;
+  opacity: 0;
+  transform: scale(0.5);
+  -webkit-animation: grow 1s ease-out forwards;
+          animation: grow 1s ease-out forwards;
 }
 
+@-webkit-keyframes grow {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .h2 {
   padding: 0;
 }
@@ -425,4 +460,8 @@ canvas {
     text-decoration: underline;
     color: #4FB3F5;
   }
+}
+.clipped {
+  -webkit-clip-path: circle(100px at center);
+          clip-path: circle(100px at center);
 }/*# sourceMappingURL=styles.css.map */
