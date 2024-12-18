@@ -42,7 +42,7 @@ header {
   color: #fff;
   text-align: center;
   background-color: #0099FF;
-  min-height: 17vh;
+  min-height: 25vh;
   display: block;
   align-items: center;
   justify-content: center;
@@ -64,7 +64,8 @@ header nav a:hover {
 }
 
 .logo {
-  height: 50px;
+  padding: 1 rem;
+  height: 100px;
   width: auto;
 }
 
@@ -94,7 +95,6 @@ p {
 h1 {
   padding-top: 1rem;
   font-size: 3rem;
-  opacity: 0;
 }
 
 @-webkit-keyframes grow {
