@@ -544,6 +544,13 @@ canvas {
   font-style: italic;
 }
 
+.indextext {
+  color: #212121;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: italic;
+}
+
 /* for Mobile */
 @media (max-width: 768px) {
   main, .contact_text, .index_nav {
