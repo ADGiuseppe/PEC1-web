@@ -169,31 +169,145 @@ canvas
 .video
   width: 80%
   height: 40vh
-
+  
 .index_nav
-  margin-left: 30%
-  margin-right: 30%
-  background-color: $white-color
-  color: $secondary-color
-  padding: 1rem
-  font-style: italic
+  display: flex
+  gap: 2rem
+  display: flex
+  height: 45rem
 
-  p
-    margin-top: 1rem
+.icon
+  position: relative
+  height: 6rem
+  width: 6rem
+  background-size: cover
+  border-radius: 50%
+  animation: wave 4s ease-in-out infinite
+  transition: transform 0.3s ease, background-image 0.3s ease
 
-  ul
-    list-style-type: none
-    padding: 0
-    font-weight: 800
-    margin-top: 10%
+  &::before
+    content: ""
+    position: absolute
+    top: -400px
+    left: 50%
+    width: 2px
+    height: 400px
+    background-color: #0099FF
+    transform: translateX(-50%)
+    z-index: -1
 
-  a
-    color: $secondary-color
-    text-decoration: none
+  &:hover
+    transform: scale(1.1)
+  
+  .index_nav
+  display: flex
+  gap: 2rem
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 45rem
 
-    &:hover
-      text-decoration: underline
-      color: #4FB3F5
+.icon
+  position: relative
+  height: 6rem
+  width: 6rem
+  background-size: cover
+  border-radius: 50%
+  animation: wave 4s ease-in-out infinite
+  transition: transform 0.3s ease, background-image 0.3s ease
+
+  &::before
+    content: ""
+    position: absolute
+    top: -400px
+    left: 50%
+    width: 2px
+    height: 400px
+    background-color: #0099FF
+    transform: translateX(-50%)
+    z-index: -1
+
+  &:hover
+    transform: scale(1.1)
+
+*
+  margin: 0
+
+.container
+  width: 150px
+  height: 150px
+  border: 1px solid black
+  position: relative
+
+.icon a
+  position: absolute
+  top: 20%
+  color: #fff
+
+.category
+  animation-delay: 1s
+  text-align: center
+  font-weight: bold
+  background-color: #0099FF
+  color: #fff
+
+.presentation
+  text-align: center
+  font-weight: bold
+  background-color: #0099FF
+  color: #fff
+  animation-delay: 1.5s
+
+.sources
+  text-align: center
+  font-weight: bold
+  background-color: #0099FF
+  color: #fff
+  animation-delay: 2s
+
+.sources a
+  color: #fff
+    
+@keyframes wave
+  0%, 100%
+    transform: translate(0)
+
+  25%
+    transform: translateY(-20px)
+
+  50%
+    transform: translateY(10px)
+
+  75%
+    transform: translateY(-20px)
+
+@media screen and (max-width: 800px)
+  .icon::before
+    top: -500px
+    height: 500px
+
+@media screen and (max-width: 450px)
+  .container
+    align-items: center
+    gap: 10px
+
+  .icon
+    height: 60px
+    width: 60px
+
+    &::before
+      top: -500px
+      height: 500px
+
+@media screen and (max-width: 400px)
+  .icon
+    height: 50px
+    width: 50px
+
+@media screen and (max-width: 330px)
+  .icon
+    height: 40px
+    width: 40px
 
 .contact_nav
   margin-left: 40%
@@ -216,7 +330,7 @@ canvas
       text-decoration: underline
       color: #4FB3F5
 
-.sources
+.sourceslinks
   text-align: center
   text-decoration: none
   a
@@ -416,112 +530,3 @@ canvas
   clip-path: circle(70px at center)
   transform: scale(0.5)  
   animation: grow 1s ease-out forwards 
-
-.index_nav
-  display: flex
-  gap: 2rem
-  display: flex
-  justify-content: center
-  align-items: center
-  height: 45rem
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%)
-
-.icon
-  position: relative
-  height: 6rem
-  width: 6rem
-  background-size: cover
-  border-radius: 50%
-  animation: wave 4s ease-in-out infinite
-  transition: transform 0.3s ease, background-image 0.3s ease
-
-  &::before
-    content: ""
-    position: absolute
-    top: -400px
-    left: 50%
-    width: 2px
-    height: 400px
-    background-color: #0099FF
-    transform: translateX(-50%)
-    z-index: -1
-
-  &:hover
-    transform: scale(1.1)
-
-
-.container
-  width: 150px
-  height: 150px
-  border: 1px solid black
-  position: relative
-
-.icon a
-  position: absolute
-  top: 20%
-  transform: translateX(-50%)
-  color: #fff
-
-.category
-  animation-delay: 1s
-  text-align: center
-  font-weight: bold
-  background-color: #0099FF
-  color: #fff
-
-.presentation
-  text-align: center
-  font-weight: bold
-  background-color: #0099FF
-  color: #fff
-  animation-delay: 1.5s
-
-.sources
-  text-align: center
-  font-weight: bold
-  background-color: #0099FF
-  color: #fff
-  animation-delay: 2s
-
-@keyframes wave
-  0%, 100%
-    transform: translate(0)
-
-  25%
-    transform: translateY(-20px)
-
-  50%
-    transform: translateY(10px)
-
-  75%
-    transform: translateY(-20px)
-
-@media screen and (max-width: 800px)
-  .icon::before
-    top: -500px
-    height: 500px
-
-@media screen and (max-width: 450px)
-  .container
-    align-items: center
-    gap: 10px
-
-  .icon
-    height: 60px
-    width: 60px
-
-    &::before
-      top: -500px
-      height: 500px
-
-@media screen and (max-width: 400px)
-  .icon
-    height: 50px
-    width: 50px
-
-@media screen and (max-width: 330px)
-  .icon
-    height: 40px
-    width: 40px
-
-
