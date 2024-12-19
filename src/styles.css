@@ -209,6 +209,9 @@ canvas {
   gap: 2rem;
   display: flex;
   height: 45rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .icon {
@@ -281,6 +284,9 @@ canvas {
   position: absolute;
   top: 20%;
   color: #fff;
+}
+.icon a:hover {
+  text-decoration: underline;
 }
 
 .category {
