@@ -146,6 +146,47 @@ img {
   height: auto;
   margin-bottom: 1rem;
 }
+img .main-image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  img .main-image {
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+img .secondary-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  img .secondary-images {
+    content: url("../images/DrawingSanFlaviano@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  img .secondary-images {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  img .secondary-images {
+    width: 48%;
+  }
+}
+@media (min-width: 1200px) {
+  img .secondary-images {
+    width: 32%;
+  }
+}
 
 ul {
   list-style-type: none;
@@ -619,20 +660,16 @@ canvas {
   }
 }
 .clippedfooter {
-  -webkit-clip-path: circle(4rem at center);
-          clip-path: circle(4rem at center);
+  -webkit-clip-path: circle(5rem at center);
+          clip-path: circle(5rem at center);
   transform: scale(0.5);
-  -webkit-animation: grow 1s ease-out forwards;
-          animation: grow 1s ease-out forwards;
 }
 
 .clippedindex {
-  -webkit-clip-path: circle(8rem at center);
-          clip-path: circle(8rem at center);
+  -webkit-clip-path: circle(9rem at center);
+          clip-path: circle(9rem at center);
   transform: scale(0.5);
-  -webkit-animation: grow 1s ease-out forwards;
-          animation: grow 1s ease-out forwards;
-  min-height: 8rem;
+  min-height: 9rem;
 }
 
 .divider {

@@ -124,6 +124,36 @@ img
   height: auto
   margin-bottom: 1rem
 
+  .main-image
+      width: 100%
+      height: auto
+      object-fit: cover 
+      
+      @media (max-width: 767px)
+        object-position: center 
+
+
+  .secondary-images
+    display: flex
+    flex-wrap: wrap
+    gap: 15px
+    width: 100%
+    height: auto
+    object-fit: contain 
+    
+    @media (min-resolution: 2dppx)
+      content: url('../images/DrawingSanFlaviano@2x.jpg') // Use high-res images on Retina screens
+
+    @media (max-width: 767px)
+      width: 100%
+        
+    @media (min-width: 768px)
+      width: 48%
+        
+    @media (min-width: 1200px)
+      width: 32%
+
+
 ul
   list-style-type: none
 
@@ -539,15 +569,14 @@ canvas
         color: #4FB3F5
 
 .clippedfooter
-  clip-path: circle(4rem at center)
+  clip-path: circle(5rem at center)
   transform: scale(0.5)  
-  animation: grow 1s ease-out forwards 
 
 .clippedindex
-  clip-path: circle(8rem at center)
+  clip-path: circle(9rem at center)
   transform: scale(0.5)  
-  animation: grow 1s ease-out forwards 
-  min-height: 8rem
+  min-height: 9rem
+
 
 .divider
   left: 0
