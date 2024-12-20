@@ -82,6 +82,10 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+footer p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 
 .footer_left, .useful_links {
   text-align: center;
@@ -637,10 +641,6 @@ canvas {
   footer {
     padding: 0.5rem;
   }
-  footer .p {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
   .index_nav, .contact_nav {
     margin-left: 10%;
     margin-right: 10%;
@@ -675,7 +675,7 @@ canvas {
   -webkit-clip-path: circle(10rem at center);
           clip-path: circle(10rem at center);
   transform: scale(0.5);
-  min-height: 10rem;
+  min-height: 20rem;
 }
 
 .divider {
