@@ -308,7 +308,7 @@ canvas
 .sources a
   color: #fff
     
-@keyframes wave (min-width: 768px)
+@keyframes wave
   0%, 100%
     transform: translate(0)
 
@@ -321,33 +321,9 @@ canvas
   75%
     transform: translateY(-20px)
 
-@media screen and (max-width: 800px)
-  .icon::before
-    top: -500px
-    height: 500px
-
-@media screen and (max-width: 450px)
-  .container
-    align-items: center
-    gap: 10px
-
-  .icon
-    height: 60px
-    width: 60px
-
-    &::before
-      top: -500px
-      height: 500px
-
-@media screen and (max-width: 400px)
-  .icon
-    height: 50px
-    width: 50px
-
-@media screen and (max-width: 330px)
-  .icon
-    height: 40px
-    width: 40px
+@media screen and (max-width: 800px) 
+  .icon 
+   animation: none
 
 .contact_nav
   margin-left: 40%
