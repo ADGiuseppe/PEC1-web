@@ -637,6 +637,10 @@ canvas {
   footer {
     padding: 0.5rem;
   }
+  footer .p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
   .index_nav, .contact_nav {
     margin-left: 10%;
     margin-right: 10%;
@@ -660,16 +664,18 @@ canvas {
   }
 }
 .clippedfooter {
-  -webkit-clip-path: circle(5rem at center);
-          clip-path: circle(5rem at center);
+  -webkit-clip-path: circle();
+          clip-path: circle();
   transform: scale(0.5);
+  max-height: 10rem;
+  max-width: 10rem;
 }
 
 .clippedindex {
-  -webkit-clip-path: circle(9rem at center);
-          clip-path: circle(9rem at center);
+  -webkit-clip-path: circle(10rem at center);
+          clip-path: circle(10rem at center);
   transform: scale(0.5);
-  min-height: 9rem;
+  min-height: 10rem;
 }
 
 .divider {

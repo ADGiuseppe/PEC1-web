@@ -546,6 +546,10 @@ canvas
 
   footer
     padding: 0.5rem
+
+    .p
+      margin-bottom: 0
+      margin-top: 0
   
   .index_nav, .contact_nav
     margin-left: 10%
@@ -569,13 +573,15 @@ canvas
         color: #4FB3F5
 
 .clippedfooter
-  clip-path: circle(5rem at center)
-  transform: scale(0.5)  
+  clip-path: circle()
+  transform: scale(0.5) 
+  max-height: 10rem
+  max-width: 10rem 
 
 .clippedindex
-  clip-path: circle(9rem at center)
+  clip-path: circle(10rem at center)
   transform: scale(0.5)  
-  min-height: 9rem
+  min-height: 10rem
 
 
 .divider
