@@ -578,7 +578,7 @@ canvas {
 
 /* for Mobile */
 @media (max-width: 768px) {
-  main, .contact_text, .index_nav {
+  main, .contact_text {
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -615,7 +615,7 @@ canvas {
   footer {
     padding: 0.5rem;
   }
-  .index_nav, .contact_nav {
+  .contact_nav {
     margin-left: 10%;
     margin-right: 10%;
     background-color: #fff;
@@ -623,16 +623,16 @@ canvas {
     padding: 1rem;
     font-style: italic;
   }
-  .index_nav ul, .contact_nav ul {
+  .contact_nav ul {
     list-style-type: none;
     padding: 0;
     font-weight: 800;
   }
-  .index_nav a, .contact_nav a {
+  .contact_nav a {
     color: #0099FF;
     text-decoration: none;
   }
-  .index_nav a:hover, .contact_nav a:hover {
+  .contact_nav a:hover {
     text-decoration: underline;
     color: #4FB3F5;
   }
